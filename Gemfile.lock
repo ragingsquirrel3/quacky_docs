@@ -1,3 +1,11 @@
+GIT
+  remote: git@github.com:ragingsquirrel3/quacky-charts.git
+  revision: afba7750ffefdfc6ac50e9acaf89796b93a55a02
+  specs:
+    quacky-charts (0.0.7)
+      coffee-rails (~> 3.2.1)
+      json
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -137,6 +145,7 @@ DEPENDENCIES
   jquery-rails
   less-rails
   pg
+  quacky-charts!
   rails (= 3.2.8)
   rspec-rails
   sqlite3
