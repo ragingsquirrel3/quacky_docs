@@ -36,4 +36,4 @@ gem 'rspec-rails'
 gem 'haml-rails'
 
 # le gem
-gem 'quacky-charts', :git => 'git@github.com:ragingsquirrel3/quacky-charts.git' # from github
+gem 'quacky-charts'
