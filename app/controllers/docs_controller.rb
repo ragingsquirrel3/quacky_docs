@@ -3,8 +3,14 @@ class DocsController < ApplicationController
   end
 
   def examples
-    @chart = Quacky::PieChartBuilder.new
-    @chart.add_data( { "label" => "Category A", "value" => 20 } )
-    @chart.add_data( { "label" => "Category B", "value" => 60 } )
+    @pie_chart = Quacky::PieChartBuilder.new
+    @pie_chart.add_data( { "label" => "Category A", "value" => 20 } )
+    @pie_chart.add_data( { "label" => "Category B", "value" => 60 } )
+    
+    example_data = [
+      { Time.now =>  50 },
+      { Time.now + 1 => 75 }
+    ]
+    @line_graph = Quacky::LineGraphBuilder.new(example_data)
   end
 end
