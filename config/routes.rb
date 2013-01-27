@@ -1,4 +1,5 @@
 QuackyDocs::Application.routes.draw do
+  root to: 'docs#about'
   
   namespace :docs do
     get 'about', as: :about
