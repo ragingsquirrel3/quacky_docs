@@ -5,10 +5,12 @@ gem 'rails', '3.2.8'
 # Heroku config
 group :test, :development do
   gem 'sqlite3'
+  gem 'rspec-rails'
 end
 
 group :production do
   gem 'pg'
+  gem 'newrelic_rpm'
 end
 
 
@@ -32,7 +34,6 @@ gem 'therubyracer'
 gem 'twitter-bootstrap-rails'
 
 # preferred tools
-gem 'rspec-rails'
 gem 'haml-rails'
 
 # le gem
