@@ -1,4 +1,9 @@
 QuackyDocs::Application.routes.draw do
+  
+  namespace :docs do
+    get 'about', as: :about
+    get 'examples', as: :examples
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
