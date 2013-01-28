@@ -37,4 +37,4 @@ gem 'twitter-bootstrap-rails'
 gem 'haml-rails'
 
 # le gem
-gem 'quacky-charts'
+gem 'quacky-charts', git: 'git://github.com/ragingsquirrel3/quacky-charts.git', branch: 'line_graph'

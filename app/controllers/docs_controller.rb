@@ -11,7 +11,8 @@ class DocsController < ApplicationController
     
     example_data = [
       { time: Time.now, data: 50 },
-      { time: Time.now + 1, data: 75 }
+      { time: Time.now + 1.hour, data: 75 },
+      { time: Time.now + 2.hours, data: 25 }
     ]
     @line_graph = Quacky::LineGraphBuilder.new(example_data)
   end
