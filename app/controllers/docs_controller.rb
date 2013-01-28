@@ -1,6 +1,7 @@
 class DocsController < ApplicationController
   def about
-    @pie_chart = Quacky::PieChartBuilder.new
+    example_data = [{ "label" => "", "value" => 20 }, { "label" => "", "value" => 60 }, { "label" => "", "value" => 110 }, { "label" => "", "value" => 10 }]
+    @pie_chart = Quacky::PieChartBuilder.new(example_data)
   end
 
   def examples
