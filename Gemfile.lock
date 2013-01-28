@@ -70,7 +70,7 @@ GEM
     newrelic_rpm (3.5.3.25)
     pg (0.14.1)
     polyglot (0.3.3)
-    quacky-charts (0.0.7)
+    quacky-charts (0.0.8)
       coffee-rails (~> 3.2.1)
       json
     rack (1.4.4)

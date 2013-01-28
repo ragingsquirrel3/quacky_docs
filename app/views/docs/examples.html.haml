@@ -1,12 +1,16 @@
 .row-fluid
   %h1 Examples
+  %p 
+    The source for these examples can be found
+    %span
+      = link_to 'here.', 'https://github.com/ragingsquirrel3/quacky_docs', target: :blank
 
 .row-fluid
   .span5
     %h2 A Pie Chart
     = @pie_chart.draw
     
-/ .row-fluid
-/   .span5
-/     %h2 A Line Graph
-/     = @line_graph.draw
+.row-fluid
+  .span5
+    %h2 A Line Graph
+    = @line_graph.draw
