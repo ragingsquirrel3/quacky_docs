@@ -8,9 +8,11 @@ class DocsController < ApplicationController
     @pie_chart.add_data( { "label" => "Category B", "value" => 60 } )
     
     example_data = [
-      { Time.now =>  50 },
-      { Time.now + 1 => 75 }
+      { time: Time.now, data: 50 },
+      { time: Time.now + 1, data: 75 }
     ]
     @line_graph = Quacky::LineGraphBuilder.new(example_data)
+    
+    puts @line_graph.draw
   end
 end

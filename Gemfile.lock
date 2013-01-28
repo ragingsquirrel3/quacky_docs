@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:ragingsquirrel3/quacky-charts.git
-  revision: d7e526f2fdddbfb3f90024dd23b34c12dd4e52f7
+  revision: 62371f93a63623aa6ca29fc4e78b6bbb60b9858d
   ref: line_graph
   specs:
     quacky-charts (0.0.7)
