@@ -2,11 +2,58 @@
   %h1 Examples
 
 .row-fluid
+  %h2 Install
+  %p Add to your Gemfile
+  %pre
+    %code gem 'quacky-charts'
+  
+  %p Run the command to bundle.
+  %pre
+    %code $ bundle
+    
+  %p To install assets, run this command:
+  %pre
+    %code $ rails g quacky:install
+
+.row-fluid
   .span5
-    %h2 A Pie Chart
+    %h2 Draw A Pie Chart
     = @pie_chart.draw
+  .span7
+    %p Initialize the chart in your controller.
+    %pre
+      %code
+        %section
+          @pie_chart = Quacky::PieChartBuilder.new
+    
+    %p Then, add some data.
+    %pre
+      %code
+        %section
+          @pie_chart.add_data( { "label" => "Category A", "value" => 20 } )
+          @pie_chart.add_data( { "label" => "Category B", "value" => 60 } )
+    
+    %p And in your view...
+    %pre
+      %code
+        %section 
+          <%= @pie_chart.draw %>
     
 .row-fluid
   .span5
-    %h2 A Line Graph
+    %h2 Draw A Line Graph
     = @line_graph.draw
+  .span7
+    %p Initialize the graph in your controller.
+    %pre
+      %code
+        %section
+          example_data = [{ time: Time.now, data: 50 },{ time: Time.now + 1.hour, data: 75 },{ time: Time.now + 2.hours, data: 25 }]
+          @line_graph = Quacky::LineGraphBuilder.new(example_data)
+  
+  
+    %p And in your view...
+    %pre
+      %code
+        %section
+          <%= @line_graph.draw %>
