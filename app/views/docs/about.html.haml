@@ -1,12 +1,16 @@
 .hero-unit
-  %h1 About QuackyCharts
-  %p QuackyCharts is a graphing gem I'm working on. It can be used to easily add pie charts and line graphs to Rails apps.  QuackyCharts uses JavaScript libraries such as D3 and Rickshaw with a simple, object-oriented Ruby syntax.
-  = link_to 'See the Source', 'https://github.com/ragingsquirrel3/quacky-charts', class: 'btn-primary btn-large'
+  .row-fluid
+    .span4
+      = @pie_chart.draw
+    .span8
+      %h2 About QuackyCharts
+      %p QuackyCharts is an open-source graphing gem. It can be used to easily add pie charts and line graphs to Rails apps.  QuackyCharts uses JavaScript libraries such as D3 and Rickshaw with a simple, object-oriented Ruby syntax.
+      = link_to 'See the Source', 'https://github.com/ragingsquirrel3/quacky-charts', class: 'btn btn-primary btn-large'
 
 .row-fluid
-  .span5
+  .span6
     %h2 Examples
     %p Ipsum Lorem and such. Ipsum Lorem and such. Ipsum Lorem and such. Ipsum Lorem and such.
-  .span5
+  .span6
     %h2 Tutorial
     %p Coming soon...

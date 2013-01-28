@@ -1,5 +1,6 @@
 class DocsController < ApplicationController
   def about
+    @pie_chart = Quacky::PieChartBuilder.new
   end
 
   def examples
