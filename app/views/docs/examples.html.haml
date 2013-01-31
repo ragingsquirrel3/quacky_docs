@@ -16,8 +16,9 @@
     %code $ rails g quacky:install
 
 .row-fluid
+  %h2 Draw a Pie Chart
+.row-fluid
   .span5
-    %h2 Draw A Pie Chart
     = @pie_chart.draw
   .span7
     %p Initialize the chart in your controller.
@@ -38,10 +39,11 @@
       %code
         %section 
           <%= @pie_chart.draw %>
-    
+          
+.row-fluid
+  %h2 Draw A Line Graph
 .row-fluid
   .span5
-    %h2 Draw A Line Graph
     = @line_graph.draw
   .span7
     %p Initialize the graph in your controller.

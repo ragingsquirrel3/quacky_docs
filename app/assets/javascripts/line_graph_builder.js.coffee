@@ -25,7 +25,7 @@ class LineGraphBuilder
 			graph: graph
 			orientation: 'left'
 			tickFormat: Rickshaw.Fixtures.Number.formatKMBT
-			element: document.getElementById('y-axis')
+			element: $('.y-axis')[0]
 		)
 		
 		graph.render()

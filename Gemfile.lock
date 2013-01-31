@@ -1,9 +1,8 @@
 GIT
   remote: git://github.com/ragingsquirrel3/quacky-charts.git
-  revision: f122fa58932f6cacad29203f1588e8063cf3a210
-  branch: line_graph
+  revision: a8ca44755a79c859e46d1418a9218833c3360f62
   specs:
-    quacky-charts (0.0.8)
+    quacky-charts (0.0.9)
       coffee-rails (~> 3.2.1)
       json
 
@@ -82,7 +81,7 @@ GEM
     rack (1.4.4)
     rack-cache (1.2)
       rack (>= 0.4)
-    rack-ssl (1.3.2)
+    rack-ssl (1.3.3)
       rack
     rack-test (0.6.2)
       rack (>= 1.0)
